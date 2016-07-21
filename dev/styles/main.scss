@@ -37,6 +37,10 @@ h5 {
 	font-family: 'Rufina', serif;
 }
 
+h2 {
+	color: $orange;
+}
+
 header,
 .foodTypes,
 .menu,
@@ -74,14 +78,14 @@ header {
 // ABOUT STYLES
 
 .about {
-	height: 70vh;
+	height: 60vh;
 	background-image: url('../images/aboutbg.png');
 }
 
 // GALLERY STYLES
 
 .gallery {
-	height: 80vh;
+	height: 70vh;
 	background-image: url('../images/gallerybg.jpg');
 }
 
@@ -95,14 +99,14 @@ header {
 // RESERVATIONS STYLES 
 
 .reservations {
-	height: 90vh;
+	height: 80vh;
 	background-image: url('../images/reservationbg.png');
 }
 
 //CONTACT STYLES 
 
 .contact {
-	height: 90vh;
+	height: 80vh;
 	background-image: url('../images/contactbg.png');
 }
 

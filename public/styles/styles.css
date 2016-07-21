@@ -156,6 +156,9 @@ h4,
 h5 {
   font-family: 'Rufina', serif; }
 
+h2 {
+  color: #ea9044; }
+
 header,
 .foodTypes,
 .menu,
@@ -181,11 +184,11 @@ header {
   background-image: url("../images/menubg.png"); }
 
 .about {
-  height: 70vh;
+  height: 60vh;
   background-image: url("../images/aboutbg.png"); }
 
 .gallery {
-  height: 80vh;
+  height: 70vh;
   background-image: url("../images/gallerybg.jpg"); }
 
 .journal {
@@ -193,11 +196,11 @@ header {
   background-image: url("../images/journalbg.png"); }
 
 .reservations {
-  height: 90vh;
+  height: 80vh;
   background-image: url("../images/reservationbg.png"); }
 
 .contact {
-  height: 90vh;
+  height: 80vh;
   background-image: url("../images/contactbg.png"); }
 
 footer {
