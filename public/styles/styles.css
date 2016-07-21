@@ -142,7 +142,8 @@ footer {
 
 .wrapper {
   width: 75%;
-  margin: auto; }
+  text-align: center;
+  margin: 0 auto; }
 
 p {
   font-family: 'Raleway', sans-serif;
@@ -185,7 +186,7 @@ header {
 
 .gallery {
   height: 80vh;
-  background-image: url("../images/gallerybg.png"); }
+  background-image: url("../images/gallerybg.jpg"); }
 
 .journal {
   height: 100vh;
