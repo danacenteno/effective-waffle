@@ -131,3 +131,74 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .container {
   max-width: 900px;
   margin: 0 auto; }
+
+html {
+  font-size: 62.5%; }
+
+header,
+section,
+footer {
+  padding: 50px; }
+
+.wrapper {
+  width: 75%;
+  margin: auto; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Rufina', serif; }
+
+header,
+.foodTypes,
+.menu,
+.about,
+.gallery,
+.journal,
+.reservations,
+.contact,
+footer {
+  background-size: cover;
+  background-position: center center; }
+
+header {
+  height: 70vh;
+  background-image: url("../images/hero.jpg"); }
+
+.foodTypes {
+  height: 50vh;
+  background-color: #fefcf8; }
+
+.menu {
+  height: 100vh;
+  background-image: url("../images/menubg.png"); }
+
+.about {
+  height: 70vh;
+  background-image: url("../images/aboutbg.png"); }
+
+.gallery {
+  height: 80vh;
+  background-image: url("../images/gallerybg.png"); }
+
+.journal {
+  height: 100vh;
+  background-image: url("../images/journalbg.png"); }
+
+.reservations {
+  height: 90vh;
+  background-image: url("../images/reservationbg.png"); }
+
+.contact {
+  height: 90vh;
+  background-image: url("../images/contactbg.png"); }
+
+footer {
+  height: 50vh;
+  background-image: url("../images/footerbg.png"); }
