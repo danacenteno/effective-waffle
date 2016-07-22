@@ -147,7 +147,7 @@ footer {
 
 p {
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem; }
+  font-size: 2rem; }
 
 h1,
 h2,
@@ -172,8 +172,17 @@ footer {
   background-position: center center; }
 
 header {
-  height: 70vh;
+  height: 80vh;
   background-image: url("../images/hero.jpg"); }
+
+.headerText {
+  color: white;
+  width: 30%;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .foodTypes {
   height: 50vh;

@@ -20,13 +20,12 @@ footer {
 
 .wrapper {
 	width: 75%;
-	text-align: center;
 	margin: 0 auto;
 }
 
 p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1rem;
+	font-size: 2rem;
 }
 
 h1,
@@ -57,9 +56,21 @@ footer {
 //HEADER STYLES
 
 header {
-	height: 70vh;
+	height: 80vh;
 	background-image: url('../images/hero.jpg');
 }
+
+.headerText {
+	color: white;
+	width: 30%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+}
+
+//CIRCLE IMG STYLES
+
+.
 
 //FOOD STYLES
 

@@ -10,8 +10,9 @@
 <body>
 	<header>
 		<div class="wrapper">
-		<img src="images/logo.png" alt="illustration of a windmill">
-		<img src="images/bakerycoffee.png" alt="illustrated title saying, 'Baker and Coffee'.">
+			<img src="images/logo.png" alt="illustration of a windmill">
+			<img src="images/bakerycoffee.png" alt="illustrated title saying, 'Baker and Coffee'.">
+			
 			<div class="headerText">
 				<p>Patries</p>
 				<p>Cakes</p>
@@ -61,12 +62,85 @@
 
 			<div class="menuLeft">
 				<h3>Desserts</h3>
+				<article class="cupcakes">
+					<div class="treats">
+						<p>Cupcakes</p>
+						<p>2.99$</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, nisi.</p>
+				</article>
 
+				<article class="cakes">
+					<div class="treats">
+						<p>Cakes</p>
+						<p>3.99$</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet.</p>
+				</article>
+
+				<article class="scones">
+					<div class="treats">
+						<p>Scones</p>
+						<p>1.99$</p>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, odio!</p>
+				</article>
+
+				<article class="muffins">
+					<div class="treats">
+						<p>Muffins</p>
+						<p>2.99$</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, non.</p>
+				</article>
+				<article class="buns">
+					<div class="treats">
+						<p>Buns</p>
+						<p>1.99%</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sapiente?</p>
+				</article>
 			</div>
 
 			<div class="menuRight">
 				<h3>Pastry</h3>
+				<article class="waffles">
+					<div class="treats">
+						<p>Waffle/GA</p>
+						<p>2.99$</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, nulla.</p>
+				</article>
+
+				<article class="macarons">
+					<div class="treats">
+						<p>Macarons</p>
+						<p>3.99$</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, eos.</p>
+				</article>
+
+				<article class="croissants">
+					<div class="treats">
+						<p>Croissants</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, voluptatibus!</p>
+					</div>
+				</article>
 				<h3>Coffee</h3>
+
+				<article class="espresso">
+					<div class="treats">
+						<p>Espresso</p>
+						<p>2.99$</p>
+					</div>
+				</article>
+
+				<article class="latte">
+					<div class="treats">
+						<p>Latte</p>
+						<p>3.99$</p>
+					</div>
+				</article>
 			</div>
 		</div>
 	</section>
@@ -82,23 +156,23 @@
 	<section class="gallery">
 		<div class="wrapper">
 			<h2>Gallery</h2>	
-			<div class="imgSelect">
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
+			<div class="galleryList">
+				<p>All Albums</p>
+				<p>The Bakery</p>
+				<p>Pastry</p>
+				<p>Desserts</p>
+				<p>Coffee</p>
 			</div>
-			<div class="imgGrid">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
-				<img src="" alt="">
+			<div class="galleryGrid">
+				<img src="images/placeholder2.jpg" alt="">
+				<img src="images/placeholder1.jpg" alt="">
+				<img src="images/placeholder3.jpg" alt="">
+				<img src="images/placeholder1.jpg" alt="">
+				<img src="images/placeholder2.jpg" alt="">
+				<img src="images/placeholder3.jpg" alt="">
+				<img src="images/placeholder3.jpg" alt="">
+				<img src="images/placeholder1.jpg" alt="">
+				<img src="images/placeholder2.jpg" alt="">
 			</div>
 		</div>
 	</section>
@@ -106,15 +180,15 @@
 	<section class="journal">
 		<div class="wrapper">
 			<h2>Journal</h2>
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
+			<img src="images/placeholder2.jpg" alt="">
+			<img src="images/placeholder1.jpg" alt="">
+			<img src="images/placeholder3.jpg" alt="">
+			<img src="images/placeholder3.jpg" alt="">
+			<img src="images/placeholder1.jpg" alt="">
+			<img src="images/placeholder2.jpg" alt="">
+			<img src="images/placeholder2.jpg" alt="">
+			<img src="images/placeholder3.jpg" alt="">
+			<img src="images/placeholder1.jpg" alt="">
 
 			<button>View Journal</button>
 		</div>
@@ -131,9 +205,16 @@
 				<p class="number">0999-999-999</p>
 			</div>
 
-			<div class="reservationForm">
-				
-			</div>
+			<form action="reservationForm">
+				<input type="text">
+				<input type="text">
+				<input type="text" placeholder="Nr. of persons">
+				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Email">
+				<input type="text" placeholder="Phone">
+				<input type="text" placeholder="Message">
+				<input type="submit" placeholder="Make Reservation">
+			</form>
 		</div>
 	</section>
 
@@ -142,18 +223,21 @@
 			<h2>Contact</h2>
 			<div class="contactLeft">
 				<div class="contactBlurb">
-					<i></i>
-					<i></i>
-					<i></i>
+					<i class="fa fa-map-marker"></i>
+					<p>Lorem Street 9, Berin</p>
+					<i class="fa fa-phone"></i>
+					<p>0999-999.999</p>
+					<i class="fa fa-envelope"></i>
+					<p>loremipsum@email.com</p>
 				</div>
 
 				<div class="socMed">
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-google-plus-square"></i>
+					<i class="fa fa-youtube-square"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-yelp"></i>
 				</div>
 
 				<div class="map">
@@ -172,17 +256,45 @@
 	<footer>
 		<div class="wrapper">
 			<article>
-				<h4>Latest Tweets</h4>
-
-				<h4>Social Media</h4>
-
+				<div class="tweets">
+					<h4>Latest Tweets</h4>
+					<p>New delicious treat in our menu! Check it out at http://demolink.net #bakery #coffee</p>
+					<p>09 December 2014 @Crafted Pixels</p>
+				</div>
+				
+				<div class="icons">
+					<h4>Social Media</h4>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-google-plus-square"></i>
+					<i class="fa fa-youtube-square"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-yelp"></i>
+				</div>
 			</article>
+
 			<article>
 				<h4>Custom Menu</h4>
+				<a href="">Home</a>
+				<a href="">Products</a>
+				<a href="">Menu</a>
+				<a href="">About</a>
+				<a href="">Reservations</a>
+				<a href="">Contact</a>
 			</article>
 			<article>
-				<h4>Open Hours</h4>
-				<h4>Latest Journal Posts</h4>
+				<div class="hours">
+					<h4>Open Hours</h4>
+					<p>Weekdays 07:00 - 19:00</p>
+					<p>Weekends 09:00 - 21:30</p>
+				</div>
+				
+				<div class="journalPosts">
+					<h4>Latest Journal Posts</h4>
+					<p>New delicious treats in our menu</p>
+					<p>New locations opening soon</p>
+					<p>Baker & Coffee turns 9!</p>
+				</div>
 			</article>
 		</div>
 	</footer>
