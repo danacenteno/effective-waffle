@@ -174,8 +174,13 @@ header {
   height: 80vh;
   background-image: url("../images/hero.jpg"); }
 
+header img {
+  display: block;
+  margin: auto; }
+
 .headerText {
-  color: red;
+  text-transform: uppercase;
+  color: white;
   width: 30%;
   display: -ms-flexbox;
   display: flex;
@@ -183,15 +188,25 @@ header {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.coffeeRing img {
+.coffeeRing {
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   position: relative; }
+  .coffeeRing img {
+    width: 30%;
+    margin: auto; }
 
 .ringText {
+  color: white;
   position: absolute;
-  top: 0;
+  top: 22%;
   left: 0;
-  right: 0;
-  bottom: 0; }
+  bottom: 0;
+  right: 0; }
+  .ringText p {
+    font-size: 1.5rem;
+    text-align: center; }
 
 .foodTypes {
   height: 50vh;

@@ -60,24 +60,42 @@ header {
 	background-image: url('../images/hero.jpg');
 }
 
+header img {
+	display: block;
+	margin: auto;
+}
+
 .headerText {
-	color: red;
+	text-transform: uppercase;
+	color: white;
 	width: 30%;
 	display: flex;
 	margin: auto;
 	justify-content: space-between;
 }
 
-.coffeeRing img {
+.coffeeRing {
+	display: flex;
+	margin: auto;
 	position: relative;
+	img {
+		width: 30%;
+		margin: auto;
+	}
 }
 
 .ringText {
+	color: white;
 	position: absolute;
-	top: 0;
+	top: 22%;
 	left: 0;
-	right: 0;
 	bottom: 0;
+	right: 0;
+
+	p {
+		font-size: 1.5rem;
+		text-align: center;
+	}
 }
 
 //CIRCLE IMG STYLES
