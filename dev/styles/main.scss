@@ -61,16 +61,27 @@ header {
 }
 
 .headerText {
-	color: white;
+	color: red;
 	width: 30%;
 	display: flex;
 	margin: auto;
 	justify-content: space-between;
 }
 
+.coffeeRing img {
+	position: relative;
+}
+
+.ringText {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
 //CIRCLE IMG STYLES
 
-.
 
 //FOOD STYLES
 

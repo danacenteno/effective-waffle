@@ -142,7 +142,6 @@ footer {
 
 .wrapper {
   width: 75%;
-  text-align: center;
   margin: 0 auto; }
 
 p {
@@ -176,13 +175,23 @@ header {
   background-image: url("../images/hero.jpg"); }
 
 .headerText {
-  color: white;
+  color: red;
   width: 30%;
   display: -ms-flexbox;
   display: flex;
   margin: auto;
   -ms-flex-pack: justify;
       justify-content: space-between; }
+
+.coffeeRing img {
+  position: relative; }
+
+.ringText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .foodTypes {
   height: 50vh;
