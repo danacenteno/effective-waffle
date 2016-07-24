@@ -146,7 +146,11 @@ footer {
 
 p {
   font-family: 'Raleway', sans-serif;
-  font-size: 2rem; }
+  font-size: 1.25rem; }
+
+article {
+  margin: 0;
+  padding: 0; }
 
 h1,
 h2,
@@ -155,8 +159,12 @@ h4,
 h5 {
   font-family: 'Rufina', serif; }
 
-h2 {
+h2,
+h3 {
   color: #ea9044; }
+
+h2 {
+  font-size: 4rem; }
 
 header,
 .foodTypes,
@@ -171,12 +179,14 @@ footer {
   background-position: center center; }
 
 header {
-  height: 80vh;
+  height: 85vh;
   background-image: url("../images/hero.jpg"); }
+  header img {
+    display: block;
+    margin: auto; }
 
-header img {
-  display: block;
-  margin: auto; }
+img.windMill {
+  margin-bottom: 2%; }
 
 .headerText {
   text-transform: uppercase;
@@ -186,39 +196,119 @@ header img {
   display: flex;
   margin: auto;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  font-weight: bolder; }
 
 .coffeeRing {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  position: relative; }
+  position: relative;
+  top: 50px; }
   .coffeeRing img {
-    width: 30%;
+    width: 33%;
     margin: auto; }
 
 .ringText {
   color: white;
   position: absolute;
-  top: 22%;
+  top: 17%;
   left: 0;
   bottom: 0;
   right: 0; }
   .ringText p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center; }
 
 .foodTypes {
-  height: 50vh;
-  background-color: #fefcf8; }
+  background-color: #fefcf8;
+  text-align: center; }
+
+.foodTypes .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+figure {
+  width: calc(33.33% - 40px);
+  margin: 130px 20px 0 20px; }
+  figure img {
+    height: 120px; }
 
 .menu {
-  height: 100vh;
   background-image: url("../images/menubg.png"); }
 
+.titleBox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative; }
+
+.titleText h2 {
+  color: white;
+  font-size: 5rem;
+  font-weight: lighter;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center; }
+
+.menu .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.menuLeft,
+.menuRight {
+  width: calc(50% - 16px);
+  margin-right: 8px;
+  padding: 0.5%;
+  border: 3px solid #606066; }
+
+.innerBox {
+  border: 1px solid #606066;
+  padding: 5%; }
+
+.menuLeft h3,
+.menuRight h3 {
+  margin: 10px 0;
+  font-size: 3rem;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #ea9044; }
+
+.treats {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .treats p {
+    font-size: 1.5rem;
+    margin-bottom: 0; }
+
+p.extra {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #606066;
+  width: 85%;
+  line-height: 1.5; }
+
 .about {
-  height: 60vh;
   background-image: url("../images/aboutbg.png"); }
+  .about p {
+    width: 50%; }
 
 .gallery {
   height: 70vh;
