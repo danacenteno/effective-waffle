@@ -231,12 +231,11 @@ img.windMill {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-
-figure {
-  width: calc(33.33% - 40px);
-  margin: 130px 20px 0 20px; }
-  figure img {
-    height: 120px; }
+  .foodTypes .wrapper figure {
+    width: calc(33.33% - 40px);
+    margin: 130px 20px 0 20px; }
+    .foodTypes .wrapper figure img {
+      height: 120px; }
 
 .menu {
   background-image: url("../images/menubg.png"); }
@@ -309,14 +308,61 @@ p.extra {
   background-image: url("../images/aboutbg.png"); }
   .about p {
     width: 50%; }
+  .about img {
+    margin-top: 10%; }
 
 .gallery {
-  height: 70vh;
   background-image: url("../images/gallerybg.jpg"); }
 
+.gallContainer {
+  display: -ms-flexbox;
+  display: flex; }
+
+.galleryList {
+  width: 20%;
+  padding: 2px;
+  background: white;
+  border: 3px solid #606066; }
+  .galleryList p {
+    font-family: 'Rufina', sans-serif;
+    font-weight: bold;
+    text-align: right; }
+
+.gallBox {
+  padding: 5% 25% 5% 13%;
+  border: 1px solid #606066; }
+
+.galleryGrid {
+  width: calc(80% - 2%);
+  margin-left: 2%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .galleryGrid figure {
+    width: 33.33%;
+    margin: 0; }
+    .galleryGrid figure img {
+      width: 100%; }
+
 .journal {
-  height: 100vh;
   background-image: url("../images/journalbg.png"); }
+  .journal button {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px auto; }
+
+.journalContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .journalContainer figure {
+    width: 33.33%; }
+    .journalContainer figure img {
+      width: 100%; }
 
 .reservations {
   height: 80vh;

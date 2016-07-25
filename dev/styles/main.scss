@@ -129,14 +129,14 @@ img.windMill {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
 
-figure {
-	width: calc(33.33% - 40px);
-	margin: 130px 20px 0 20px;
+	figure {
+		width: calc(33.33% - 40px);
+		margin: 130px 20px 0 20px;
 
-	img {
-		height: 120px;
+		img {
+			height: 120px;
+		}
 	}
 }
 
@@ -148,7 +148,6 @@ figure {
 
 .titleBox {
 	display: flex;
-	
 	align-items: center;
 	justify-content: center;
 	position: relative;
@@ -223,22 +222,81 @@ p.extra {
 	p {
 		width: 50%;
 	}
-}
 
+	img {
+		 margin-top: 10%;
+	}
+}
 
 
 // GALLERY STYLES
 
 .gallery {
-	height: 70vh;
 	background-image: url('../images/gallerybg.jpg');
+}
+
+.gallContainer {
+	display: flex;
+}
+
+.galleryList {
+	width: 20%;
+	padding: 2px;
+	background: white;
+	border: 3px solid $gray;
+	height: 100%;
+
+	p {
+		font-family: 'Rufina', sans-serif;
+		font-weight: bold;
+		text-align: right;
+	}
+}
+
+.gallBox {
+	padding: 5% 25% 5% 13%;
+	border: 1px solid $gray;
+}
+
+.galleryGrid {
+	width: calc(80% - 2%);
+	margin-left: 2%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	figure {
+		width: 33.33%;
+		margin: 0;
+
+		img {
+			width: 100%;
+		}
+	}
 }
 
 //JOURNAL STYLES
 
 .journal {
-	height: 100vh;
 	background-image: url('../images/journalbg.png');
+
+	button {
+		display: flex;
+		margin: 10px auto;
+	}
+}
+
+.journalContainer {
+	display: flex;
+	flex-wrap: wrap;
+
+	figure {
+		width: 33.33%;
+
+		img {
+			width: 100%;
+		}
+	}
 }
 
 // RESERVATIONS STYLES 
