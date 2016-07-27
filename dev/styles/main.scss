@@ -262,7 +262,6 @@ p.extra {
 	width: calc(80% - 2%);
 	margin-left: 2%;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 
 	figure {
@@ -271,6 +270,7 @@ p.extra {
 
 		img {
 			width: 100%;
+			margin-bottom: -1%;
 		}
 	}
 }
@@ -283,6 +283,12 @@ p.extra {
 	button {
 		display: flex;
 		margin: 10px auto;
+		background: none;
+		border: none;
+		color: $orange;
+		padding: 5px 20px;
+		border-radius: 5px;
+		border: 2px solid $orange;
 	}
 }
 
@@ -295,6 +301,7 @@ p.extra {
 
 		img {
 			width: 100%;
+			margin-bottom: -1%;
 		}
 	}
 }
@@ -309,7 +316,6 @@ p.extra {
 //CONTACT STYLES 
 
 .contact {
-	height: 80vh;
 	background-image: url('../images/contactbg.png');
 }
 

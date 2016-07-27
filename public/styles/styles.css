@@ -322,7 +322,8 @@ p.extra {
   width: 20%;
   padding: 2px;
   background: white;
-  border: 3px solid #606066; }
+  border: 3px solid #606066;
+  height: 100%; }
   .galleryList p {
     font-family: 'Rufina', sans-serif;
     font-weight: bold;
@@ -337,22 +338,27 @@ p.extra {
   margin-left: 2%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .galleryGrid figure {
     width: 33.33%;
     margin: 0; }
     .galleryGrid figure img {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: -1%; }
 
 .journal {
   background-image: url("../images/journalbg.png"); }
   .journal button {
     display: -ms-flexbox;
     display: flex;
-    margin: 10px auto; }
+    margin: 10px auto;
+    background: none;
+    border: none;
+    color: #ea9044;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 2px solid #ea9044; }
 
 .journalContainer {
   display: -ms-flexbox;
@@ -362,14 +368,14 @@ p.extra {
   .journalContainer figure {
     width: 33.33%; }
     .journalContainer figure img {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: -1%; }
 
 .reservations {
   height: 80vh;
   background-image: url("../images/reservationbg.png"); }
 
 .contact {
-  height: 80vh;
   background-image: url("../images/contactbg.png"); }
 
 footer {
