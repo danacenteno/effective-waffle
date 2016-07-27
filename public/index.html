@@ -261,57 +261,76 @@
 	<section class="reservations">
 		<div class="wrapper">
 			<h2>Reservations</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo totam atque placeat, quis odit eligendi consequuntur. Blanditiis cum, qui odio ad explicabo et eos laudantium delectus nihil illo placeat id!</p>
+			<div class="resContainer">
+				<div class="res-blurb">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo totam atque placeat, quis odit eligendi consequuntur. Blanditiis cum, qui odio ad explicabo et eos laudantium delectus nihil illo placeat id!</p>
 
-			<div class="phoneBox">
-				<i class="fa fa-phone"></i>
-				<p>Phone Reservations</p>
-				<p class="number">0999-999-999</p>
+					
+					<div class="phoneBox">
+						<div class="innerBox">
+							<i class="fa fa-phone"></i>
+							<div class="box-right">
+								<p>Phone Reservations</p>
+								<p class="number">0999-999-999</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<form action="reservationForm" class=resForm>
+					<input type="text">
+					<input type="text">
+					<input type="text" placeholder="Nr. of persons">
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Phone">
+					<textarea name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+					<input type="submit" value="Make Reservation">
+				</form>
 			</div>
-
-			<form action="reservationForm">
-				<input type="text">
-				<input type="text">
-				<input type="text" placeholder="Nr. of persons">
-				<input type="text" placeholder="Name">
-				<input type="text" placeholder="Email">
-				<input type="text" placeholder="Phone">
-				<input type="text" placeholder="Message">
-				<input type="submit" placeholder="Make Reservation">
-			</form>
 		</div>
 	</section>
 
 	<section class="contact">
 		<div class="wrapper">
 			<h2>Contact</h2>
-			<div class="contactLeft">
-				<div class="contactBlurb">
-					<i class="fa fa-map-marker"></i>
-					<p>Lorem Street 9, Berin</p>
-					<i class="fa fa-phone"></i>
-					<p>0999-999.999</p>
-					<i class="fa fa-envelope"></i>
-					<p>loremipsum@email.com</p>
+			<div class="contactContainer">
+				<div class="contactLeft">
+					<div class="contactBlurb">
+						<article>
+							<i class="fa fa-map-marker"></i>
+							<p>Lorem Street 9, Berlin</p>
+						</article>
+						<article>
+							<i class="fa fa-phone"></i>
+							<p>0999-999.999</p>
+						</article>
+						<article>
+							<i class="fa fa-envelope"></i>
+							<p>loremipsum@email.com</p>
+						</article>
+					</div>
+
+					<div class="socMed">
+						<i class="fa fa-twitter"></i>
+						<i class="fa fa-facebook"></i>
+						<i class="fa fa-google-plus-square"></i>
+						<i class="fa fa-youtube-square"></i>
+						<i class="fa fa-instagram"></i>
+						<i class="fa fa-yelp"></i>
+					</div>
+
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.9419869190024!2d13.376647515552017!3d52.516388944249584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c6f688bdcd%3A0x52e700de31013720!2sPariser+Platz!5e0!3m2!1sen!2sca!4v1469647617417" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
 				</div>
 
-				<div class="socMed">
-					<i class="fa fa-twitter"></i>
-					<i class="fa fa-facebook"></i>
-					<i class="fa fa-google-plus-square"></i>
-					<i class="fa fa-youtube-square"></i>
-					<i class="fa fa-instagram"></i>
-					<i class="fa fa-yelp"></i>
-				</div>
-
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310838.5293030662!2d13.144955060578688!3d52.507629042009064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C+Germany!5e0!3m2!1sen!2sca!4v1469416051991" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-			</div>
-
-			<div class="contactRight">
-				<form action="">
-					
+				<form action="contact" class=contactForm>
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="Email">
+					<input type="text" placeholder="Phone">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+					<input type="submit" value="Send Message">
 				</form>
 			</div>
 		</div>
@@ -337,14 +356,17 @@
 				</div>
 			</article>
 
-			<article>
+			<article class="footerMenu">
 				<h4>Custom Menu</h4>
-				<a href="">Home</a>
-				<a href="">Products</a>
-				<a href="">Menu</a>
-				<a href="">About</a>
-				<a href="">Reservations</a>
-				<a href="">Contact</a>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Menu</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Reservations</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+				
 			</article>
 			<article>
 				<div class="hours">
