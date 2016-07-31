@@ -1,0 +1,92 @@
+
+// FOOTER STYLES 
+
+footer {
+	height: 50vh;
+	background-image: url('../images/footerbg.png');
+}
+
+footer .wrapper {
+	display: flex;
+	justify-content: space-around;
+
+	article {
+		color: white;
+		width: calc(33.33% - 40px);
+		padding-right: 40px;
+
+		h4 {
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.75rem;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 1.25rem;
+
+			span {
+				color: $orange;
+			}
+		}
+	}
+}
+
+.icons {
+	margin-top: 60px;
+	
+	i {
+		color: white;
+		letter-spacing: 5px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.fa {
+		letter-spacing: 5px;
+		transition: color 0.3s ease;
+		&:hover,
+		&:focus {
+			color: $orange;
+		}
+	}
+}
+
+.footerMenu {
+	ul {
+		padding: 0;
+	}
+
+	ul li {
+		list-style-type: none;
+		padding-bottom: 5px;
+	}
+
+	ul li a {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.35rem;
+		text-decoration: none;
+		color: $orange;
+		transition: all 0.5s ease;
+		&:hover,
+		&:focus {
+			color: white;
+			font-weight: bolder;
+		}
+	}
+}
+
+.journalPosts p {
+	color: $orange;
+	display: inline-block;
+	transition: all 0.5s ease;
+	margin: 5px 0;
+	&:hover,
+	&:focus {
+		padding-bottom: 5px;
+		color: white;
+		border-bottom: 2px solid white;
+	}
+}

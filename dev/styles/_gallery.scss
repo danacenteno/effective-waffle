@@ -1,0 +1,57 @@
+
+// GALLERY STYLES
+
+.gallery {
+	background-image: url('../images/gallerybg.jpg');
+}
+
+.gallContainer {
+	display: flex;
+}
+
+.galleryList {
+	width: 22%;
+	padding: 2px;
+	background: white;
+	border: 3px solid $notBlack;
+	height: 100%;
+
+	a {
+		font-family: 'Rufina', sans-serif;
+		font-size: 1.5rem;
+		line-height: 2.5;
+		display: block;
+		text-decoration: none;
+		color: $notBlack;
+		font-weight: bold;
+		text-align: right;
+		transition: color 0.3s ease;
+		&:hover,
+		&:focus {
+			color: $orange;
+		}
+
+	}
+}
+
+.gallBox {
+	padding: 5% 25% 5% 13%;
+	border: 1px solid $notBlack;
+}	
+
+.galleryGrid {
+	width: calc(78% - 2%);
+	margin-left: 2%;
+	display: flex;
+	flex-wrap: wrap;
+
+	figure {
+		width: 33.33%;
+		margin: 0;
+
+		img {
+			width: 100%;
+			margin-bottom: -1.5%;
+		}
+	}
+}

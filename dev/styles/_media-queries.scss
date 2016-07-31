@@ -1,0 +1,98 @@
+// MEDIA QUERIES
+
+@media (max-width: 940px) {
+	body {
+		border-top: 10px solid purple;
+	}
+	
+	// HEADER STYLES
+	.headerText {
+		width: 45%;
+	}
+
+	// MENU STYLES
+	.menu .wrapper {
+		flex-direction: column;
+		width: 80%;
+	
+		.menuLeft,
+		.menuRight {
+			width: 100%;
+		}
+	}
+
+	.about p {
+		width: 100%;
+
+	}
+
+} 
+
+@media (max-width: 767px) {
+	body {
+		border-top: 10px solid red;
+	}
+
+	//HEADER STYLES
+
+	.headerText {
+		width: 60%;
+		margin-bottom: 20px;
+	}
+
+	.foodTypes .wrapper {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		figure:nth-of-type(1) {
+			margin-top: 150px;
+		}
+
+		figure {
+			width: 100%;
+			margin: 40px;
+
+			img {
+				height: 100%;
+			}
+
+			figcaption p {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.menu .wrapper {
+		width: 100%;
+	}
+
+	// ABOUT STYLES
+
+	.about p {
+		width: 125%;
+		margin-right: 0;
+		font-size: 1.65rem;
+	}
+
+	.about img {
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		border-top: 10px solid green;
+	}
+
+	// HEADER STYLES
+
+	.title {
+		width: 100%;
+	}
+
+	.headerText {
+		width: 100%;
+	}
+
+}

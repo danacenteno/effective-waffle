@@ -1,0 +1,131 @@
+// RESERVATIONS STYLES 
+
+.reservations {
+	background-image: url('../images/reservationbg.png');
+}
+
+.resContainer {
+	display: flex;
+}
+
+.res-blurb {
+	width: calc(33.33% - 20px);
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+
+	p {
+		font-size: 1.35rem;
+		line-height: 1.5;
+	}
+}
+
+.phoneBox {
+	border: 3px solid $notBlack;
+	padding: 2px;
+	position: relative;
+	top: 50px;
+}
+
+.phoneBox .innerBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $notBlack;
+	padding: 15px;
+
+	// .innerBox {
+	// 	padding: 10px 30px;
+	// 	border: 1px solid $notBlack;
+	// }
+
+	i.fa-phone {
+		font-size: 4rem;
+		color: $orange;
+	}
+
+	.box-right {
+		display: flex;
+		flex-direction: column;
+		margin-left: 20px;
+
+		p {
+			margin: 0;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			font-weight: bolder;
+		}
+
+		:last-child {
+			font-weight: bolder;
+			font-size: 2.2rem;
+		}
+	}
+}
+
+.resForm {
+	width: 66.67%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2px;
+	border: 3px solid $notBlack;
+
+	input,
+	textarea {
+		padding: 5%;
+		font-size: 1.5rem;
+		border: none;
+		border: 1px solid $notBlack;
+		font-family: 'Raleway', sans-serif;
+		font-weight: bolder;
+	}
+
+	::-webkit-input-placeholder {
+	   color: $notBlack;
+	}
+
+	input {
+		width: 50%;
+		height: 40px;
+	}
+
+	textarea,
+	input[type="submit"] {
+		width: 100%;
+		color: $notBlack;
+	}
+}
+
+input[type="submit"] {
+	background: white;
+	background-image: url(../images/seal.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 20px 0;
+	height: 100px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bolder;
+	transition: color 0.5s ease;
+	&:hover,
+	&:focus {
+		color: $orange;
+	}
+}
+
+input[type="text"].calendar,
+input[type="text"].clock
+ {
+	background-size: 10%;
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+
+input[type="text"].calendar {
+	background-image: url(../images/calendar-icon.png);
+}
+
+input[type="text"].clock {
+	background-image: url(../images/clock-icon.png);
+}

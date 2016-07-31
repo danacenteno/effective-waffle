@@ -1,0 +1,88 @@
+//HEADER STYLES
+
+header {
+	height: 85vh;
+	background-image: url('../images/hero.jpg');
+
+	img {
+		display: block;
+		margin: auto;
+	}
+}
+
+img.windMill {
+	margin-bottom: 2%;
+}
+
+.headerText {
+	text-transform: uppercase;
+	color: white;
+	width: 30%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	font-weight: bolder;
+}
+
+//CIRCLE IMG STYLES
+
+.coffeeRing {
+	display: flex;
+	margin: auto;
+	position: relative;
+	top: 40px;
+	img {
+		width: 250px;
+		margin: auto;
+	}
+}
+
+.ringText {
+	color: white;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+	p {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+}
+
+//FOOD STYLES
+
+.foodTypes {
+	background-color: #fefcf8;
+	text-align: center;
+}
+
+.foodTypes .wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	figure {
+		width: calc(33.33% - 40px);
+		margin: 130px 20px 0 20px;
+
+		img {
+			height: 120px;
+		}
+	}
+}
+
+figcaption {
+	h2 {
+		font-size: 3rem;
+		margin-bottom: 5px;
+		color: $notBlack;
+	}
+
+	p {
+		color: #C8C7C3;
+		line-height: 1.5;
+	}
+} 
+
