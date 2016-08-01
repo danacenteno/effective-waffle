@@ -10,4 +10,8 @@ $(function () {
 		offset: 0,
 		speed: 1000
 	});
+
+	$('.mainNav a').on('click', function () {
+		$('.mainNav').removeClass('show');
+	});
 });
