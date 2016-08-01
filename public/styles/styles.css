@@ -215,6 +215,8 @@ i.fa-chevron-up {
     transform: scale(1.2); }
 
 ul.mainNav {
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -235,19 +237,24 @@ ul.mainNav {
 ul.mainNav.show {
   opacity: 1;
   visibility: visible;
-  transform: scale(1); }
+  transform: scale(1);
+  margin: 0; }
 
 ul.mainNav li {
   padding: 25px 0;
-  font-size: 2rem; }
+  font-size: 2rem;
+  list-style-type: none; }
 
 ul.mainNav a {
-  color: dimGray;
-  transition: all 0.3s ease; }
+  font-family: 'Rufina', serif;
+  color: #333;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+  text-decoration: none; }
   ul.mainNav a:hover, ul.mainNav a:focus {
     border: none;
     border-bottom: 3px solid #ea9044;
-    border-radius: 0;
+    padding: 7px;
     color: #ea9044; }
 
 div.fa-bars {
