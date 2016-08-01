@@ -1,10 +1,6 @@
 // MEDIA QUERIES
 
 @media (max-width: 940px) {
-	body {
-		border-top: 10px solid purple;
-	}
-	
 	// HEADER STYLES
 	.headerText {
 		width: 45%;
@@ -21,16 +17,118 @@
 		}
 	}
 
+	// ABOUT STYLES
 	.about p {
 		width: 100%;
 
 	}
 
+	// GALLERY STYLES
+	.gallContainer {
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.galleryList {
+		width: 100%;
+
+		.gallBox {
+			display: flex;
+			justify-content: space-around;
+			padding: 2% 5%;
+		}
+	}
+
+	.galleryGrid {
+		width: 100%;
+		margin: 20px 0;
+
+		figure {
+			width: 50%;
+			margin: 0;
+
+			&:nth-of-type(9) {
+				margin: auto;
+			}
+		}
+	}
+
+	// JOURNAL STYLES
+
+	.journalContainer figure {
+		width: 50%;
+
+		&:nth-of-type(5) {
+			width: 100%;
+			height: 170px;
+		}
+	}
+
+	// RESERVATION STYLES
+
+	.res-blurb {
+		width: 50%;
+	}
+
+	.innerBox i {
+		display: none;
+	}
+
+	// CONTACT STYLES
+	
+	.contactContainer {
+		flex-direction: column;
+
+		.contactLeft {
+			width: 100%;
+
+			.map iframe {
+				width: 100%;
+			}
+		}
+	}
+
+	.contactForm {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	// FOOTER STYLES
+
+	footer .wrapper {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		article {
+			width: 50%;
+		}
+		
+		.last {
+			display: flex;
+			width: 100%;
+
+			> div {
+				width: 100%;
+			}
+		}
+	}
+
+	
+
 } 
 
 @media (max-width: 767px) {
-	body {
-		border-top: 10px solid red;
+	// GENERAL STYLES 
+
+	.menu .wrapper,
+	.about .wrapper,
+	.gallery .wrapper,
+	.journal .wrapper,
+	.reservations .wrapper,
+	.contact .wrapper {
+		width: 100%;
+		height: 100%;
 	}
 
 	//HEADER STYLES
@@ -70,7 +168,7 @@
 	// ABOUT STYLES
 
 	.about p {
-		width: 125%;
+		width: 100%;
 		margin-right: 0;
 		font-size: 1.65rem;
 	}
@@ -78,13 +176,41 @@
 	.about img {
 		width: 50%;
 	}
+
+	// JOURNAL STYLES
+
+	.hoverMe,
+	.specialHover {
+		visibility: visible;
+		opacity: 1;
+
+		h4 {
+			font-size: 1.75rem;
+		}
+	}
+
+
+	// RESERVATION STYLES
+
+	.resContainer {
+		flex-direction: column;
+
+		.res-blurb {
+			width: 100%;
+		}
+
+		.phoneBox {
+			display: none;
+		}
+	}
+	
+	.resForm {
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 480px) {
-	body {
-		border-top: 10px solid green;
-	}
-
 	// HEADER STYLES
 
 	.title {
@@ -95,4 +221,54 @@
 		width: 100%;
 	}
 
+	// GALLERY STYLES
+
+	.galleryList .gallBox {
+		flex-wrap: wrap;
+		justify-content: space-around;
+
+		a {
+			font-size: 1.5rem;
+		}
+	}
+
+	.galleryGrid figure {
+		width: 100%;
+	}
+
+	// JOURNAL STYLES 
+
+	.journalContainer figure {
+		width: 100%;
+		height: auto;
+	}
+
+	.hoverMe h4,
+	.specialHover h4 {
+		font-size: 1.5rem;
+	}
+
+	.specialHover h4 {
+		margin-top: 10px;
+	}
+
+	// RESERVATIONS STYLES
+
+	.resForm input {
+		width: 100%;
+		height: auto;
+	}
+
+	// FOOTER STYLES 
+	
+
+	footer .wrapper {
+		width: 100%;
+
+		article {
+			width: 100%;
+			flex-direction: column;
+			text-align: center;
+		}
+	}
 }

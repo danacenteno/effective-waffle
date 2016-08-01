@@ -153,6 +153,10 @@ img.windMill {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
   top: 40px; }
   .coffeeRing img {
@@ -283,7 +287,8 @@ p.extra {
     margin: 7% 0 5% 0; }
 
 .gallery {
-  background-image: url("../images/gallerybg.jpg"); }
+  background-image: url("../images/gallerybg.jpg");
+  height: 100%; }
 
 .gallContainer {
   display: -ms-flexbox;
@@ -402,7 +407,8 @@ p.extra {
       justify-content: space-between;
   -ms-flex-align: start;
       -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
+      align-items: flex-start;
+  height: 100%; }
   .specialHover h4 {
     margin-top: 0; }
   .specialHover p {
@@ -592,7 +598,6 @@ input[type="text"].clock {
       color: #ea9044; }
 
 footer {
-  height: 50vh;
   background-image: url("../images/footerbg.png"); }
 
 footer .wrapper {
@@ -701,8 +706,6 @@ footer {
   background-position: center center; }
 
 @media (max-width: 940px) {
-  body {
-    border-top: 10px solid purple; }
   .headerText {
     width: 45%; }
   .menu .wrapper {
@@ -713,11 +716,72 @@ footer {
     .menu .wrapper .menuRight {
       width: 100%; }
   .about p {
-    width: 100%; } }
+    width: 100%; }
+  .gallContainer {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 100%; }
+  .galleryList {
+    width: 100%; }
+    .galleryList .gallBox {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding: 2% 5%; }
+  .galleryGrid {
+    width: 100%;
+    margin: 20px 0; }
+    .galleryGrid figure {
+      width: 50%;
+      margin: 0; }
+      .galleryGrid figure:nth-of-type(9) {
+        margin: auto; }
+  .journalContainer figure {
+    width: 50%; }
+    .journalContainer figure:nth-of-type(5) {
+      width: 100%;
+      height: 170px; }
+  .res-blurb {
+    width: 50%; }
+  .innerBox i {
+    display: none; }
+  .contactContainer {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .contactContainer .contactLeft {
+      width: 100%; }
+      .contactContainer .contactLeft .map iframe {
+        width: 100%; }
+  .contactForm {
+    width: 100%;
+    margin-top: 50px; }
+  footer .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        -ms-grid-row-align: flex-start;
+        align-items: flex-start; }
+    footer .wrapper article {
+      width: 50%; }
+    footer .wrapper .last {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      footer .wrapper .last > div {
+        width: 100%; } }
 
 @media (max-width: 767px) {
-  body {
-    border-top: 10px solid red; }
+  .menu .wrapper,
+  .about .wrapper,
+  .gallery .wrapper,
+  .journal .wrapper,
+  .reservations .wrapper,
+  .contact .wrapper {
+    width: 100%;
+    height: 100%; }
   .headerText {
     width: 60%;
     margin-bottom: 20px; }
@@ -741,16 +805,57 @@ footer {
   .menu .wrapper {
     width: 100%; }
   .about p {
-    width: 125%;
+    width: 100%;
     margin-right: 0;
     font-size: 1.65rem; }
   .about img {
-    width: 50%; } }
+    width: 50%; }
+  .hoverMe,
+  .specialHover {
+    visibility: visible;
+    opacity: 1; }
+    .hoverMe h4,
+    .specialHover h4 {
+      font-size: 1.75rem; }
+  .resContainer {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .resContainer .res-blurb {
+      width: 100%; }
+    .resContainer .phoneBox {
+      display: none; }
+  .resForm {
+    width: 100%; } }
 
 @media (max-width: 480px) {
-  body {
-    border-top: 10px solid green; }
   .title {
     width: 100%; }
   .headerText {
-    width: 100%; } }
+    width: 100%; }
+  .galleryList .gallBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .galleryList .gallBox a {
+      font-size: 1.5rem; }
+  .galleryGrid figure {
+    width: 100%; }
+  .journalContainer figure {
+    width: 100%;
+    height: auto; }
+  .hoverMe h4,
+  .specialHover h4 {
+    font-size: 1.5rem; }
+  .specialHover h4 {
+    margin-top: 10px; }
+  .resForm input {
+    width: 100%;
+    height: auto; }
+  footer .wrapper {
+    width: 100%; }
+    footer .wrapper article {
+      width: 100%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: center; } }

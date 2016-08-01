@@ -19,7 +19,7 @@
 	-->
 </head>
 <body>
-	<header>
+	<header id="home">
 		<nav>
 			<ul>
 				<li><a href="#">Menu</a></li>
@@ -79,7 +79,7 @@
 		</div>
 	</section>
 
-	<section class="menu">
+	<section id="food" class="menu">
 		<div class="titleBox">
 			<img src="images/menu.png" alt="">
 			<div class="titleText">
@@ -185,7 +185,7 @@
 		</div>
 	</section>
 
-	<section class="about">
+	<section id="bio" class="about">
 		<div class="wrapper">
 			<h2>About</h2>
 			<p>Baker and Coffee is a family owned bakery and coffee shop. We only use the best organic ingredients for our products, accompanied by handpicked coffees.</p>
@@ -195,18 +195,18 @@
 		</div>
 	</section>
 
-	<section class="gallery">
+	<section id="photos" class="gallery">
 		<div class="wrapper">
 			<h2>Gallery</h2>
 
 			<div class="gallContainer">
 				<div class="galleryList">
 					<div class="gallBox">
-					<a href="#">All Albums</a>
-					<a href="#">The Bakery</a>
-					<a href="#">Pastry</a>
-					<a href="#">Desserts</a>
-					<a href="#">Coffee</a>
+						<a href="#">All Albums</a>
+						<a href="#">The Bakery</a>
+						<a href="#">Pastry</a>
+						<a href="#">Desserts</a>
+						<a href="#">Coffee</a>
 					</div>
 				</div>
 
@@ -243,7 +243,7 @@
 		</div>
 	</section>
 
-	<section class="journal">
+	<section id="blog" class="journal">
 		<div class="wrapper">
 			<h2>Journal</h2>
 			<div class="journalContainer">
@@ -317,7 +317,7 @@
 		</div>
 	</section>
 
-	<section class="reservations">
+	<section id="reserve" class="reservations">
 		<div class="wrapper">
 			<h2>Reservations</h2>
 			<div class="resContainer">
@@ -339,13 +339,13 @@
 				</div>
 
 				<form action="reservationForm" class=resForm>
-					<input type="text" class="calendar">
-					<input type="text" class="clock">
-					<input type="text" placeholder="Nr. of persons">
+					<input type="text" class="calendar" required>
+					<input type="text" class="clock" required>
+					<input type="text" placeholder="Nr. of persons" required>
 					<!-- <input type="text" placeholder="Nr. of persons"> -->
-					<input type="text" placeholder="Name">
-					<input type="text" placeholder="Email">
-					<input type="text" placeholder="Phone">
+					<input type="text" placeholder="Name" required>
+					<input type="text" placeholder="Email" required>
+					<input type="text" placeholder="Phone" required>
 					<textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
 					<input type="submit" value="Make Reservation">
 				</form>
@@ -353,7 +353,7 @@
 		</div>
 	</section>
 
-	<section class="contact">
+	<section id="correspondence" class="contact">
 		<div class="wrapper">
 			<h2>Contact</h2>
 			<div class="contactContainer">
@@ -402,10 +402,10 @@
 				</div>
 
 				<form action="contact" class=contactForm>
-					<input type="text" placeholder="Name">
-					<input type="text" placeholder="Email">
-					<input type="text" placeholder="Phone">
-					<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+					<input type="text" placeholder="Name" required>
+					<input type="text" placeholder="Email" required>
+					<input type="text" placeholder="Phone" required>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea required>
 					<input type="submit" value="Send Message">
 				</form>
 			</div>
@@ -458,7 +458,7 @@
 				</ul>
 				
 			</article>
-			<article>
+			<article class="last">
 				<div class="hours">
 					<h4>Open Hours</h4>
 					<p>Weekdays 07:00 - 19:00</p>
