@@ -200,8 +200,70 @@ figcaption p {
   color: #C8C7C3;
   line-height: 1.5; }
 
-nav {
-  display: none; }
+i.fa-chevron-up {
+  position: fixed;
+  bottom: 6%;
+  right: 5%;
+  display: inline-block;
+  z-index: 100;
+  color: white;
+  background: #ea9044;
+  border: none;
+  padding: 7px;
+  transition: transform 0.5s ease; }
+  i.fa-chevron-up:hover, i.fa-chevron-up:focus {
+    transform: scale(1.2); }
+
+ul.mainNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  transform: scale(1.5);
+  z-index: 10000; }
+
+ul.mainNav.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1); }
+
+ul.mainNav li {
+  padding: 25px 0;
+  font-size: 2rem; }
+
+ul.mainNav a {
+  color: dimGray;
+  transition: all 0.3s ease; }
+  ul.mainNav a:hover, ul.mainNav a:focus {
+    border: none;
+    border-bottom: 3px solid #ea9044;
+    border-radius: 0;
+    color: #ea9044; }
+
+div.fa-bars {
+  position: fixed;
+  top: 6%;
+  right: 4%;
+  display: inline-block;
+  z-index: 10000000000;
+  color: #333;
+  background: white;
+  padding: 10px;
+  font-size: 2.5rem;
+  transition: all 0.3s ease; }
+  div.fa-bars:hover, div.fa-bars:focus {
+    background: #ea9044;
+    color: white; }
 
 .menu {
   background-image: url("../images/menubg.png"); }
@@ -780,7 +842,7 @@ footer {
   .journal .wrapper,
   .reservations .wrapper,
   .contact .wrapper {
-    width: 100%;
+    width: 90%;
     height: 100%; }
   .headerText {
     width: 60%;

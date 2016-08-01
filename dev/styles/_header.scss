@@ -88,3 +88,23 @@ figcaption {
 	}
 } 
 
+
+// BACK-TO-TOP BUTTON STYLES
+
+i.fa-chevron-up {
+	position: fixed;
+	bottom: 6%;
+	right: 5%;
+	display: inline-block;
+	z-index: 100;
+	color: white;
+	background: $orange;
+	border: none;
+	padding: 7px;
+	transition: transform 0.5s ease;
+	&:hover,
+	&:focus {
+		transform: scale(1.2);
+	}
+
+}

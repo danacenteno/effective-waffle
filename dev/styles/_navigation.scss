@@ -1,3 +1,57 @@
-nav {
-	display: none;
+ul.mainNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(255,255,255,0.8);
+	flex-flow: column wrap;
+	text-align: center;
+	justify-content: space-around;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s linear;
+	transform: scale(1.5);
+	z-index: 10000;
+}
+
+ul.mainNav.show {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+ul.mainNav li {
+	padding: 25px 0;
+	font-size: 2rem;
+}
+
+ul.mainNav a {
+	color: dimGray;
+	transition: all 0.3s ease;
+	&:hover,
+	&:focus {
+		border: none;
+		border-bottom: 3px solid $orange;
+		border-radius: 0;
+		color: $orange;
+	}
+}
+
+div.fa-bars {
+	position: fixed;
+	top: 6%;
+	right: 4%;
+	display: inline-block;
+	z-index: 10000000000;
+	color: $notBlack;
+	background: white;
+	padding: 10px;
+	font-size: 2.5rem;
+	transition: all 0.3s ease;
+	&:hover,
+	&:focus {
+		background: $orange;
+		color: white;
+	}
 }
